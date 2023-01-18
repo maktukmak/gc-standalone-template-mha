@@ -5,7 +5,7 @@
 #define sc_get_thread_id omp_get_thread_num
 
 static void __init_const_globals(void* __stream, int8_t* __restrict__ __module_data, uint8_t* __restrict__ buffer_14, uint8_t* __restrict__ buffer_15, uint8_t* __restrict__ buffer_16, uint8_t* __restrict__ buffer_36) noexcept __attribute__((nonnull (2,3,4,5,6)));
-extern "C" void* sc_aligned_malloc(void* stream, uint64_t size) noexcept __attribute__((returns_nonnull))  /*__attribute__((malloc))*/;
+extern "C" void* sc_aligned_malloc(void* stream, uint64_t size) noexcept __attribute__((returns_nonnull))  __attribute__((malloc));
 static bool outerloop_4096_partition_cast_reduce_mul_reorder_39(void* __stream, int8_t* __restrict__ __module_data, int32_t* __restrict__ reorder_49_outs_0, uint8_t* __restrict__ cast_38_ins_0, int32_t* __restrict__ mul_41_ins_1) noexcept __attribute__((nonnull (2,3,4,5)));
 static void outerloop_128_partition_quantized_managed_matmul_core_sub_sub_cast_mul_relu_add_cast_quantized_managed_matmul_core_cast_reduce_compute_reduce_collect_mul_sub_sub_cast_mul_relu_add_cast_reorder(void* __stream, int8_t* __restrict__ __module_data, uint8_t* __restrict__ buffer_11, uint8_t* __restrict__ buffer_10, int8_t* __restrict__ buffer_9, int32_t* __restrict__ buffer_8, int32_t* __restrict__ buffer_7, float* __restrict__ buffer_6, float* __restrict__ buffer_5, int32_t* __restrict__ buffer_4, int8_t* __restrict__ buffer_3, int32_t* __restrict__ buffer_2, float* __restrict__ buffer_1, float* __restrict__ buffer_0) noexcept __attribute__((nonnull (2,3,4,5,6,7,8,9,10,11,12,13,14)));
 extern "C" void sc_aligned_free(void* stream, void* ptr) noexcept;
@@ -58,7 +58,7 @@ static void cast__190_closure_8(void* __stream, int8_t* __restrict__ __module_da
 static void reduce__200_closure_9(void* __stream, int8_t* __restrict__ __module_data, uint64_t _fuseiter_280, int32_t* __restrict__ __ins_0, int32_t* __restrict__ __outs_0) noexcept __attribute__((nonnull (2,4,5)));
 static void reorder__310_closure_10(void* __stream, int8_t* __restrict__ __module_data, uint64_t fused_0fused_0_fuseiter_298___fuseiter_299_4___fuseiter_300_5_0outer, int8_t* __restrict__ __ins_0, int8_t* __restrict__ __outs_0) noexcept __attribute__((nonnull (2,4,5)));
 static void reorder__300_closure_11(void* __stream, int8_t* __restrict__ __module_data, uint64_t fused_0fused_0_fuseiter_303___fuseiter_304_6___fuseiter_305_7_0outer, int8_t* __restrict__ __ins_0, int8_t* __restrict__ __outs_0) noexcept __attribute__((nonnull (2,4,5)));
-extern "C" void* sc_thread_aligned_malloc(void* stream, uint64_t size) noexcept __attribute__((returns_nonnull))  /*__attribute__((malloc))*/;
+extern "C" void* sc_thread_aligned_malloc(void* stream, uint64_t size) noexcept __attribute__((returns_nonnull))  __attribute__((malloc));
 extern "C" void sc_thread_aligned_free(void* stream, void* ptr) noexcept;
 static void outerloop_4096_partition_cast_reduce_mul_reorder_390_closure_12(void* __stream, int8_t* __restrict__ __module_data, uint64_t __itr_0_0outer, uint8_t* __restrict__ cast_38_ins_0, int32_t* __restrict__ mul_41_ins_1, int32_t* __restrict__ reorder_49_outs_0) noexcept __attribute__((nonnull (2,4,5,6)));
 extern "C" int32_t sc_get_thread_id() noexcept __attribute__((const));
